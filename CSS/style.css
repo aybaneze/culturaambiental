@@ -47,6 +47,9 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+.section:nth-child(even) .content-section{
+    background: hsla(0, 0%, 0%, 0.588235294117);
+}
 .principal-section{
     background-color: #7BB551;
     padding: 20px 50px;
