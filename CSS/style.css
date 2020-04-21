@@ -1,0 +1,129 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    color: #fff;
+}
+.content-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    max-width: 80%;
+    margin: auto;
+}
+.content-section h2{
+    font-size: 32px;
+    margin: 0;
+}
+.content-section h4{
+    font-size: 24px;
+    margin: 10px;
+}
+.content-section p{
+    font-size: 18px;
+}
+.content-section .content-img img{
+    width: 180px;
+    height: 180px;
+}
+.content-section .content-img{
+    width: 30%;
+    text-align: center;
+}
+.content-section .content-img + div,.section:nth-child(odd) div:first-child{
+    width: 70%;
+}
+
+.section:nth-child(odd){
+    background-color: #7BB551;
+    text-align: left;
+}
+.section:nth-child(even){
+    background: url(https://camiper.com/tiempominero/wp-content/uploads/2019/06/cuidado-medio-ambiente-camiper.jpg);
+    text-align: right;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.principal-section{
+    background-color: #7BB551;
+    padding: 20px 50px;
+}
+.principal-section div{
+    text-align: center;
+
+}
+.principal-section div h1{
+    font-size: 60px;
+    margin: 10px 0;
+}
+.principal-section div p{
+    font-size: 31px;
+    margin: 10px 0;
+    text-transform: capitalize;
+}
+.content-boletin{
+    text-align: center;
+    padding: 100px 0;
+}
+.content-boletin .img-border{
+    padding: 10px;
+    -webkit-box-shadow: 2px 5px 42px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 5px 42px -9px rgba(0,0,0,0.75);
+    box-shadow: 2px 5px 42px -9px rgba(0,0,0,0.75);
+    width: 51%;
+    margin: auto;
+}
+.content-boletin p{
+    color: #000;
+    font-size: 32px;
+    font-weight: bold;
+}
+.content-boletin img{
+    width: 100%;
+}
+
+@media (max-width: 768px){
+    .principal-section {
+        background-color: #7BB551;
+        padding: 20px 20px;
+    }
+    .principal-section div p {
+        font-size: 18px;
+    }
+    .principal-section div h1 {
+        font-size: 40px;
+    }
+    .content-boletin {
+        text-align: center;
+        padding: 0px 0;
+    }
+    .section:nth-child(even){
+        background: url(https://p1.pxfuel.com/preview/9/796/935/aspens-leaf-dark-green.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .content-section {
+        padding: 25px 10px;
+    }
+    .section{
+        text-align: center !important;
+    }
+    .section:nth-child(even) .content-section{
+        flex-direction: column-reverse !important;
+    }
+    .section:nth-child(odd) .content-section{
+        flex-direction: column;
+    }
+    .content-section .content-img{
+        width: 100%;
+        text-align: center;
+    }
+    .content-section .content-img + div,.section:nth-child(odd) div:first-child{
+        width: 100%;
+    }
+}
